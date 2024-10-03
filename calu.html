@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+    </head>
+    <style>
+        body {
+        
+            
+            justify-content: center;
+            display: flex;
+        }
+        div{
+        text-align: center;
+        }
+        div h1 {
+            letter-spacing:3px;
+
+            
+        }
+
+    </style>
+    <body>
+        <div>
+            <h2>calculator</h2>
+            <input type ="number" placeholder="1st number" id="num1"/><br />
+            <input type ="number" placeholder="2st number" id="num2" /><br />
+            <button id ="add">+</button>
+            <button id ="sub">-</button>
+            <button id ="mul">*</button>
+            <button id ="divv">/</button>
+            <input type ="number" readonly id="result" />
+            <script >
+                var a = document.getElementById("num1");
+                var b = document.getElementById("num2");
+                var c = document.getElementById("result");
+                document.getElementById("add").addEventListener
+                ("click",function(){
+                    c.value=(a.value)+(b.value)
+                })
+                document.getElementById("sub").addEventListener
+                ("click",function(){
+                    c.value=(a.value)-(b.value)
+                })
+                document.getElementById("mul").addEventListener
+                ("click",function(){
+                    c.value=(a.value)*(b.value)
+                })
+                document.getElementById("divv").addEventListener
+                ("click",function(){
+                    c.value=(a.value)/(b.value)
+                })
+
+            </script>
+        </div>
+    </body>
